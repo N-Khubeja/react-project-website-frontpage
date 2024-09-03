@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +40,155 @@
     transform: rotate(360deg);
   }
 }
+
+
+.slider-container {
+  position: relative;
+  width: 90%; 
+  height: 700px; 
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade img {
+  opacity: 0;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-button:hover {
+  background-color: rgba(233, 229, 18, 0.8);
+  transition: 1s;
+}
+
+.nav-button:first-of-type {
+  left: 10px;
+}
+
+.nav-button:last-of-type {
+  right: 10px;
+}
+
+#sectionFirst{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.teams{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.next-game{
+  display: flex;
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 10px 20px;
+  border-radius: 5%;
+}
+
+.home-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  background-color:#282c34;
+}
+
+.away-team{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  background-color:#282c34;
+}
+
+.secondSection{
+  margin-top:50px ;
+  display: flex;
+  flex-direction: column;
+}
+
+.match{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 300px;
+  margin-top: 50px;
+  background-color:#282c34;
+  padding: 30px 90px;
+  border-radius: 5%;
+}
+
+#team{
+  color: white ;
+}
+
+.timer{
+  background-color: grey;
+}
+
+.history{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.teams-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.teams-table th, .teams-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.teams-table th {
+  background-color: #f4f4f4;
+}
+
+.teams-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.teams-table tr:hover {
+  background-color: #f1f1f1;
+}
+
